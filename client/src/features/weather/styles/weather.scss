@@ -1,0 +1,63 @@
+$width: calc(100vw - 20px - 20px - 20px - 20px - 80px);
+$height: calc(100vh - 20px - 20px);
+$hu: calc($height / 100);
+$wu: calc($width / 100);
+$gray: rgb(142, 148, 156);
+$weather-bar-width: calc(70 * $wu);
+$weather-schedule-width: calc(30 * $wu);
+$weather-header-width: 80px;
+$weather-bar-height: calc(100vh - 20px - 20px);
+$weather-conditions-height: calc(35 * $hu);
+$degrees-bar-height: calc(35 * $hu);
+$weather-widget-height: calc(30 * $hu);
+$weather-degrees-bar-height: calc(35 * $hu);
+@import "./componentsStyles/weather_header.scss";
+@import "./componentsStyles/degrees_bar.scss";
+@import "./componentsStyles/weather_widget.scss";
+@import "./componentsStyles/profile.scss";
+@import "./componentsStyles/weather_conditions.scss";
+@import "./componentsStyles/weather_schedule.scss";
+@import "./componentsStyles/weather-city-list.scss";
+
+
+.weather-container{
+  display: flex;
+  gap: 20px;
+}
+
+
+
+.weather-background{
+  position: fixed;
+  height: 100vh;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+  img{
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.weather-bar{
+  width: $weather-bar-width;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: $weather-bar-height;
+}
+
+
+
+
+
+
+.weather-layout{
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+
+
