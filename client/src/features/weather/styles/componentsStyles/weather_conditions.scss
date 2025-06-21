@@ -1,0 +1,47 @@
+.weather-conditions{
+  background: var(--midnight);
+  border-radius: 15px;
+}
+
+.weather-conditions{
+  padding: 20px;
+  padding-bottom: 30px;
+  text-align: start;
+  &__title{
+    align-self: start;
+    color: $gray;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 25px;
+  }
+  &__metrics{
+    display: grid;
+    gap: 25px;
+    grid-template-columns: 1fr 1fr;
+  }
+  &__item{
+    border-radius: 15px;
+    display: flex;
+    align-items: start;
+    gap: 5px;
+    h3{
+      display: flex;
+      align-items: center;
+      font-size: 20px;
+      color: $gray;
+      font-weight: 400;
+    }
+    // padding: 10px 0px;
+    // height: calc(($weather-conditions-height - 20px - 20px - 20px - 15px - 10px) / 2);
+  }
+  &__item-value{
+    font-size: 24px;
+    margin-top: 5px;
+    color: rgba(255,255,255,0.8);
+  }
+  &__item-icon{
+    width: 26px;
+    opacity: 0.8;
+  }
+}

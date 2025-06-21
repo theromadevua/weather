@@ -1,0 +1,42 @@
+.weather-city-list{
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  border-radius: 15px;
+  width: 100%;
+  background: rgba(61, 82, 103, 0.9);
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.3);
+  padding: 5px;
+
+  z-index: 10;
+
+  &__loading{
+    padding: 10px;
+  }
+  &__item-content{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  &__item{
+    cursor: pointer;
+    align-items: end;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 12px;
+    padding: 15px;
+    background: var(--midnight);
+    &:hover{
+
+    }
+    h3{
+      font-weight: 100;
+      font-size: 18px;
+    }
+    h2{
+      font-weight: 400;
+      font-size: 26px;
+    }
+  }
+}

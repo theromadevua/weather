@@ -1,0 +1,63 @@
+
+.weather-schedule{
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px;
+  justify-self: end;
+  width: $weather-schedule-width;
+  background-color: var(--midnight);
+  border-radius: 15px;
+  overflow-y: auto;
+  transition: 0.3s ease;
+  backdrop-filter: blur(5px);
+  &:hover{
+    backdrop-filter: blur(15px);
+  }
+
+  &__title{
+    align-self: start;
+    color: $gray;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  &-line{
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin: 0;
+    padding: 0;
+    width: calc(100% - 0px);
+  }
+}
+
+.weather-schedule-item__container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.weather-schedule-item{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  margin: 10px 0px;
+  cursor: pointer;
+  border-radius: 12px;
+  &__day-title{
+    font-weight: 400;
+  }
+  &__temp{
+    font-weight: 400;
+  }
+  &:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+}

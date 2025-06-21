@@ -1,0 +1,124 @@
+.degrees-bar {
+  background: var(--midnight);
+  border-radius: 15px;
+  overflow-x: auto;
+  scrollbar-width: 0px;
+  scrollbar-width: none;
+  backdrop-filter: blur(5px);
+  transition: 0.3s ease;
+  height: max-content;
+  padding: 15px;
+  &__container {
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    // Universal scrollbar customisation
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255,255,255,0.3) transparent;
+    border-radius: 8px;
+
+    &::-webkit-scrollbar {
+      height: 6px;
+      background: transparent;
+      border-radius: 8px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: rgba(255,255,255,0.3);
+      border-radius: 8px;
+    }
+    &::-webkit-scrollbar-track {
+      background: transparent;
+      border-radius: 8px;
+    }
+  }
+  ::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+  }
+  &:hover{
+    backdrop-filter: blur(15px);
+  }
+  h1{
+    width: max-content;
+  }
+  g{
+    fill: #ffffff;
+  }
+  circle{
+    fill: #ffffff;
+  }
+    &__navigation {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 15px;
+  }
+  
+  &__day-button {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(5px);
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 12px;
+    
+    &:hover {
+      background: rgba(255, 255, 255, 0.15);
+      border-color: rgba(255, 255, 255, 0.3);
+      backdrop-filter: blur(10px);
+      transform: translateY(-2px);
+    }
+    
+    &--active {
+      background: rgba(33, 150, 243, 0.3);
+      border-color: #2196f3;
+      color: #ffffff;
+      box-shadow: 0 4px 15px rgba(33, 150, 243, 0.2);
+      transform: scale(1.05);
+      
+      &:hover {
+        background: rgba(33, 150, 243, 0.4);
+        transform: scale(1.05) translateY(-2px);
+      }
+    }
+  }
+  
+  &__day-info {
+    text-align: center;
+  }
+  
+  &__day-name {
+    font-weight: bold;
+    margin-bottom: 2px;
+  }
+  
+  &__day-temp {
+    font-size: 10px;
+    opacity: 0.9;
+  }
+  
+  &__current-info {
+    margin-top: 15px;
+    text-align: center;
+    
+    h1 {
+      color: #ffffff;
+      font-size: 16px;
+      margin-bottom: 8px;
+    }
+  }
+  
+  &__weather-info {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 13px;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 8px 12px;
+    border-radius: 8px;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    display: inline-block;
+  }
+}

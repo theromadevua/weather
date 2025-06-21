@@ -1,0 +1,76 @@
+.weather-widget {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 15px;
+  // height: $weather-widget-height;
+  text-align: left;
+  flex: 1;
+
+  &__input-icon{
+    width: 20px;
+  }
+  &__input-wrapper {
+    min-width: 300px;
+    width: calc(100% - 20px);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background: var(--dark-blue);
+    border-radius: 10px;
+    padding: 0px 15px;
+    position: absolute;
+    bottom: 10px;
+  }
+
+  &__input{
+
+    flex: 1;
+    padding: 12px 10px;
+    border-radius: 10px;
+    font-size: 18px;
+    border: none;
+    background: none;
+    outline: none;
+  }
+
+  &__main-block{
+    min-width: 320px;
+    position: relative;
+    background: var(--midnight);
+    border-radius: 15px;
+    padding: 10px;
+  }
+
+  &__title {
+    display: flex;
+    align-items: flex-start;
+
+    h1 {
+      font-family:Arial, Helvetica, sans-serif;
+      line-height: 0.9;
+      width: max-content;
+      position: relative;
+      display: block;
+      font-size: calc(5vw + 5vh);
+      font-weight: 100;
+
+      &::after {
+        content: '°C';
+
+        top: calc(15%);
+        font-size: 0.2em;
+        position: absolute;
+        align-self: flex-start;
+      }
+    }
+  }
+
+  h2{
+    font-weight: 100;
+    font-size: 36px;
+  }
+
+  &__image{
+    height: 250px;
+  }
+}
