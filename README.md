@@ -6,7 +6,7 @@ A simple pet project weather app.
 Weather app use openweathermap API to find out the weather in any place.
 
 ## Screenshots
-<img src="weather-screen.jpg" alt="Welcome Screen" width="300" />
+<img src="weather-screen.jpg" alt="Welcome Screen" width="500" />
 
 ## Tech Stack
 - React
